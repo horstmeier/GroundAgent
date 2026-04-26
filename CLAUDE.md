@@ -88,7 +88,7 @@ Two distinct syntaxes exist in Azure Pipelines and must be handled separately:
 - [ ] Replace Windows-only backslash paths in `TaskBuilder` with `Path.Combine`
 - [ ] Replace hardcoded `appsettings.json` path `D:\ap\...` with sensible cross-platform default
 - [ ] Add `System.CommandLine` for proper CLI argument handling (pipeline file, variable overrides)
-- [ ] Rename solution and root namespace from `AzurePipelineRunner` to `GroundAgent`
+- [ ] Rename solution and root namespace from `GroundAgent` to `GroundAgent`
 
 ### Phase 2 — Node.js Task Runner
 - [ ] Implement `NodeExecutioner` supporting Node10, Node16, Node20, Node24 handlers

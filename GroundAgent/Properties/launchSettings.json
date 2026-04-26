@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GroundAgent": {
+      "commandName": "Project",
+      "commandLineArgs": "BuildTest.yaml"
+    }
+  }
+}

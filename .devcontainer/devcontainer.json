@@ -9,7 +9,7 @@
     "ghcr.io/devcontainers/features/git:1": {}
   },
 
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && dotnet restore AzurePipelineRunner/AzurePipelineRunner.csproj",
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && dotnet restore GroundAgent/GroundAgent.csproj",
 
   "customizations": {
     "vscode": {
@@ -25,7 +25,7 @@
         "usernameheo.errorlens"
       ],
       "settings": {
-        "dotnet.defaultSolution": "AzurePipelineRunner.sln",
+        "dotnet.defaultSolution": "GroundAgent.sln",
         "editor.formatOnSave": true,
         "editor.inlineSuggest.enabled": true,
         "github.copilot.enable": {

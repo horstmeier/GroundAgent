@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "AzurePipelineRunner": {
-      "commandName": "Project",
-      "commandLineArgs": "BuildTest.yaml"
-    }
-  }
-}

@@ -47,7 +47,7 @@ The build outputs will be in a folder called "_build".
 ### Example of using the runner:
 
 ```
-AzurePipelineRunner build.yaml
+GroundAgent build.yaml
 ```
 
 Example Yaml file:
