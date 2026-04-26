@@ -1,0 +1,39 @@
+{
+  "name": "GroundAgent",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:1-10.0-bookworm",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+
+  "postCreateCommand": "npm install -g @anthropic-ai/claude-code && dotnet restore AzurePipelineRunner/AzurePipelineRunner.csproj",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.vscode-dotnet-runtime",
+        "ms-dotnettools.csdevkit",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-vscode.vscode-typescript-next",
+        "redhat.vscode-yaml",
+        "EditorConfig.EditorConfig",
+        "usernameheo.errorlens"
+      ],
+      "settings": {
+        "dotnet.defaultSolution": "AzurePipelineRunner.sln",
+        "editor.formatOnSave": true,
+        "editor.inlineSuggest.enabled": true,
+        "github.copilot.enable": {
+          "*": true
+        }
+      }
+    }
+  },
+
+  "remoteUser": "vscode"
+}
